@@ -38,4 +38,16 @@
         android:text="Resultado:"
         android:layout_below="@id/btnCalcular"
         android:layout_marginTop="16dp"/>
+
+    <!-- Agrega el botón de regreso -->
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar al Menú"
+        android:layout_below="@id/textViewResultado"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="volverAlMenu"/>
+
 </RelativeLayout>

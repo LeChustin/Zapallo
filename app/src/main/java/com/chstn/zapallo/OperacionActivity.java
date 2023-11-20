@@ -1,5 +1,6 @@
 package com.chstn.zapallo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -57,4 +58,11 @@ public class OperacionActivity extends AppCompatActivity {
         // Muestra el resultado en el TextView
         textViewResultado.setText("Resultado: " + resultado);
     }
+
+    private void volverAlMenu() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish(); // Cierra la actividad actual para evitar que quede en la pila de actividades
+    }
+
 }
