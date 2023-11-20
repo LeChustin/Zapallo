@@ -5,35 +5,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextNumber1"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Número 1"
-        android:inputType="numberDecimal"
-        android:layout_marginTop="16dp"/>
-
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextNumber1"
-        android:hint="Número 2"
-        android:inputType="numberDecimal"
+        android:text="MENU"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
 
     <Button
-        android:id="@+id/btnSumar"
+        android:id="@+id/btnSuma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextNumber2"
+        android:text="Suma"
+        android:layout_below="@id/textView"
         android:layout_marginTop="16dp"
-        android:text="Sumar"/>
+        android:layout_marginStart="16dp"
+        android:onClick="openSumaActivity"/>
 
-    <TextView
-        android:id="@+id/textViewResultado"
+    <Button
+        android:id="@+id/btnResta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btnSumar"
-        android:layout_marginTop="16dp"/>
+        android:text="Resta"
+        android:layout_below="@id/btnSuma"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="openRestaActivity"/>
+
+    <Button
+        android:id="@+id/btnMultiplicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiplicación"
+        android:layout_below="@id/btnResta"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="openMultiplicacionActivity"/>
+
+    <Button
+        android:id="@+id/btnDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="División"
+        android:layout_below="@id/btnMultiplicacion"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="openDivisionActivity"/>
 </RelativeLayout>
